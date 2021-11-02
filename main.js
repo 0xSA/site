@@ -4,5 +4,12 @@ let input = document.querySelector('input');
 
 input.addEventListener('change', (e) =>
 {
-	document.querySelector('#answers').innerHTML = answers[parseInt(input.value, 10) - 1];
+    let a = answers[parseInt(input.value, 10) - 1].split(',');
+    let r = '';
+
+    for (let i = 0; i < 10; i++) r += a[i] + ' ';
+    r += '<br/>';
+    for (let i = 10; i < 20; i++) r += a[i] + ' ';
+
+	document.querySelector('#answers').innerHTML = r;
 });
