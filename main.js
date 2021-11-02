@@ -4,7 +4,7 @@ let input = document.querySelector('input');
 
 input.addEventListener('change', (e) =>
 {
-    let a = answers[parseInt(input.value, 10) - 1].split(',');
+    let a = answers[parseInt(input.value, 10) - 1];
     let r = '';
 
     for (let i = 0; i < 10; i++) r += a[i] + ' ';
