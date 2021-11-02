@@ -4,7 +4,5 @@ let input = document.querySelector('input');
 
 input.addEventListener('change', (e) =>
 {
-    let a = answers[parseInt(input.value, 10) - 1];
-
-	document.querySelector('#answers').innerHTML = a.split(',').join('<br/>');
+	document.querySelector('#answers').innerHTML = answers[parseInt(input.value, 10) - 1];
 });
